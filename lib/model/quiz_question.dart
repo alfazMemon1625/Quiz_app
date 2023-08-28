@@ -2,4 +2,10 @@ class QuizQuestion {
   const QuizQuestion(this.text, this.ans);
   final String text;
   final List<String> ans;
+
+  List<String> getshuffledQues() {
+    final getshuffle = List.of(ans);
+    getshuffle.shuffle();
+    return getshuffle;
+  }
 }

@@ -18,7 +18,10 @@ class AnsButton extends StatelessWidget {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(30))),
       onPressed: onTap,
-      child: Text(ansText),
+      child: Text(
+        ansText,
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
