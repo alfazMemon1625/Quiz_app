@@ -33,7 +33,7 @@ class _QuestionScrState extends State<QuestionScr> {
   @override
   Widget build(context) {
     final currentQuestion = questions[currentQuestionIndex];
-    // second method for cokunm centre replace a"centre" widget and mainAxisalignment
+    // second method for column centre replace a"centre" widget and mainAxisalignment
     return SizedBox(
       width: double.infinity,
       child: Container(

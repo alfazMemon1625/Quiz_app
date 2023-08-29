@@ -38,7 +38,7 @@ class _QuizState extends State<Quiz> {
     //when all ans done then again page start
     if (selectedAns.length == questions.length) {
       setState(() {
-        selectedAns = [];
+        // selectedAns = [];
         // activeScreen = 'start-screen';
         activeScreen = 'result-screen';
       });
@@ -63,7 +63,9 @@ class _QuizState extends State<Quiz> {
     }
 
     if (activeScreen == "result-screen") {
-      screenWidget =  ResultsScreen(choosenAnswers: selectedAns,);
+      screenWidget = ResultsScreen(
+        choosenAnswers: selectedAns,
+      );
     }
     return MaterialApp(
       home: Scaffold(
