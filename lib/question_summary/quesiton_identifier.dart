@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class QuestionIdentifier extends StatelessWidget {
   const QuestionIdentifier(
-      {super.key, required this.questionIndex, required this.questionColor});
+      {super.key, required this.questionIndex, required this.isCorrectans});
   final int questionIndex;
-  final bool questionColor;
+  final bool isCorrectans;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class QuestionIdentifier extends StatelessWidget {
       height: 30,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-          color: questionColor
+          color: isCorrectans
               ? Colors.green
               : const Color.fromARGB(255, 255, 86, 67),
           borderRadius: BorderRadius.circular(100)),
